@@ -4,3 +4,9 @@ function mySecondFunction() {    //Defining a function and naming it.
     var result = str.fontcolor("orange"); //Using the fontcolor method on str variable
     document.getElementById("orangeText").innerHTML = result; //Putting the value of result into HTML element with "orangeText" id
 }
+
+
+function add(num1, num2){   //Defining the add function
+    result = num1 + num2;   //Adding the two numbers and storing them in the result variable.
+    document.getElementById("result").innerHTML = result;   //Putting the result value into HTML element id result
+}
