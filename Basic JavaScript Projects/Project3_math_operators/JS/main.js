@@ -1,6 +1,6 @@
-function myThirdFunction() {
-    var result = 1 + 2;
-    document.getElementById("Math").innerHTML = "1 + 2 = " + result;
+function myThirdFunction() { //Defining my third custom function
+    var result = 1 + 2; //Adding 1 and 2 and storing the value in result variable
+    document.getElementById("Math").innerHTML = "1 + 2 = " + result; //Putting the value of result in element id "Math"
 }
 
 function myFourthFunction() {
