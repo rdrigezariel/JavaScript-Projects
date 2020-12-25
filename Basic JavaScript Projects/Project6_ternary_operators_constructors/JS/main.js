@@ -1,8 +1,8 @@
-function rideFunction() {
-    var height, canRide;
-    height = document.getElementById("height").value;
-    canRide = (height < 52) ? "You are too short" : "You are tall enough";
-    document.getElementById("ride").innerHTML = canRide + " to ride.";
+function rideFunction() {   //Define function
+    var height, canRide;    //Define height and carRide variables
+    height = document.getElementById("height").value;   //Fetch value from element id "height"
+    canRide = (height < 52) ? "You are too short" : "You are tall enough"; //Check value of height variable
+    document.getElementById("ride").innerHTML = canRide + " to ride.";  //Display value
 }
 
 function voteFunction() {
