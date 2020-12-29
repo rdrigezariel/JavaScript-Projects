@@ -1,4 +1,10 @@
 // Assignment 1
+function concatMethod() { // Define concatMethod function
+    var first_string = "The "; //Define and declare value to first_string
+    var second_string = "Tech Academy"; //Define and declare value to second_string
+    console.log(first_string.concat(second_string)); //concatenate the second_string w/ the first_string and log the value
+}
+
 function sliceMethod() { //Define sliceMethod function
     var string = "The Tech Academy"; //Set value to string variable
     var section = string.slice(4,8); //Slice desired value from string variable (i.e. "Tech") and set value in section variable
@@ -37,6 +43,7 @@ function valueOfMethod() { //Define valueOfMethod function
     document.getElementById("valueOf").innerHTML = x.valueOf(); //Display results in valueOf element id using the valueOf method. valueOf returns the primitive value of the specified input.
 }
 
+concatMethod(); //Execute concatMethod function
 sliceMethod(); //Execute sliceMethod function
 upperCaseMethod(); //Execute upperCaseMethod function
 searchMethod(); //Execute searchMethod function
