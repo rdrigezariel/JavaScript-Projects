@@ -104,14 +104,15 @@ keys.addEventListener('click', (event) => {
     }
 
     if (target.classList.contains('operator')) {
-        console.log(target.value)
         handleOperator(target.value);
         updateDisplay();
+        return;
     }
 
     if (target.classList.contains('decimal')) {
         inputDecimal(target.value);
         updateDisplay();
+        return;
     }
     // ensures that AC clears the numbers from the calculator
     if (target.classList.contains('all-clear')) {
