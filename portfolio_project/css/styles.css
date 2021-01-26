@@ -1,0 +1,446 @@
+body {
+    margin: 0;
+    font-family: Jura;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 3%;
+}
+
+#home h1 {
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+}
+
+#home h3 {
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+}
+
+h3 {
+    text-align: center;
+}
+
+.white-text {
+    color: white;
+}
+
+p {
+    text-align: justify;
+    letter-spacing: 1px;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.center {
+    text-align: center;
+}
+
+a {
+    color: blue;
+}
+
+q {
+    font-style: italic;
+}
+
+img {
+    filter: grayscale(75%);
+    border-radius: 8px;
+    max-width: 100%;
+    height: 340px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img:hover {
+    filter: grayscale(5%);
+    transition: transform 1s;
+    transform: scale(1.1);
+}
+
+footer {
+    padding: 2%;
+    color: white;
+}
+
+footer a {
+    color: white;
+}
+
+/* NAVBAR */
+
+.navbar {
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+    -webkit-animation: moveNav 1s;
+    animation: moveNav 1s;
+}
+
+@keyframes moveNav {
+    from {top: -5vh;}
+    to {top: 0vh;}
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    -webkit-animation: moveNavText 1.1s;
+    animation: moveNavText 1.1s;
+}
+
+@keyframes moveNavText {
+    from {top: -10vh;}
+    to {top: 0vh;}
+}
+
+@media screen and (max-width: 576px){
+    .navbar a {
+        width: 25%;
+        font-size: 12px;
+    }
+}
+
+.navbar a:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-weight: bold;
+}
+
+.navbar a.active {
+    background: darkgray;
+}
+
+#coding_video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    z-index: -1;
+    background: black;
+}
+
+.video_text {
+    color: white;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    -webkit-animation: moveVideoText 5s;
+    animation: moveVideoText 5s;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+}
+
+@keyframes moveVideoText {
+    from {top: -50vh;}
+    to {top: 0vw;}
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#about .row {
+    display: flex;
+    flex-direction: row;
+}
+
+#about .column_1 {
+    float: left;
+    background: white;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    width: 50%;
+    height: 400px;
+    text-align: center;
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+    -webkit-animation: moveColumnOneAbout 5s;
+    animation: moveColumnOneAbout 5s;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+@keyframes moveColumnOneAbout {
+    from {left: -100vw;}
+    to {left: 0vw;}
+}
+
+#about .column_2 {
+    float: right;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    width: 50%;
+    height: 400px;
+    text-align: center;
+    -webkit-animation: moveColumnTwoAbout 5s;
+    animation: moveColumnTwoAbout 5s;
+}
+
+@keyframes moveColumnTwoAbout {
+    from {right: -100vw;}
+    to {right: 0vw;}
+}
+
+/* GITHUB */
+
+#github .row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+}
+
+#github .column_1 {
+    float: left;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    width: 50%;
+    height: 400px;
+    text-align: center;
+    -webkit-animation: moveColumnOneGitHub 5s;
+    animation: moveColumnOneGitHub 5s;
+    border-radius: 15px;
+}
+
+@keyframes moveColumnOneGitHub{
+    from {left: -100vw;}
+    to {left: 0vw;}
+}
+
+#github .column_2 {
+    float: right;
+    background: white;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    width: 50%;
+    height: 400px;
+    text-align: center;
+    box-shadow: -1px -1px 5px 0px rgba(0,0,0,0.75);
+    -webkit-animation: moveColumnTwoAbout 5s;
+    animation: moveColumnTwoAbout 5s;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+@keyframes moveColumnTwoAbout {
+    from {right: -100vw;}
+    to {right: 0vw;}
+}
+
+/* CONTACT */
+
+#contact .row {
+    display: flex;
+    flex-direction: row;
+}
+
+#contact .column_1 {
+    float: left;
+    background: white;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    width: 50%;
+    height: 500px;
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+    -webkit-animation: moveColumnOneAbout 5s;
+    animation: moveColumnOneAbout 5s;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+@keyframes moveColumnOneAbout {
+    from {left: -100vw;}
+    to {left: 0vw;}
+}
+
+#contact .column_2 {
+    float: right;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    width: 50%;
+    height: 400px;
+    text-align: center;
+    -webkit-animation: moveColumnTwoAbout 5s;
+    animation: moveColumnTwoAbout 5s;
+}
+
+@keyframes moveColumnTwoAbout {
+    from {right: -100vw;}
+    to {right: 0vw;}
+}
+
+input[type=text] {
+    width: 100%; 
+    padding: 12px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 4px;
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical; 
+}
+
+input[type=text]:hover {
+    box-shadow: 0 0 5px #7a7a7a inset;
+}
+
+input[type=submit] {
+    background-color: black; 
+    color: white;
+    font-weight: bold; 
+    padding: 12px 20px; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+/* Hover effect for submit button */
+input[type=submit]:hover {
+    background-color: white; /* Turns the background of the submit button white when the user hovers over it */
+    color: black; /* Turns the font black when hovered over */
+    transform: scale(1.5); /* Makes the button increase 1.5 times in size */
+    transition: transform 1.5s; /* Makes the transform effect last 1.5 seconds */
+}
+
+/* Form element */
+form {
+    border-radius: 5px; /* Rounds the corners of the contact form */
+    background-color: #cfcfcf; 
+    padding: 10px; /* Adds padding to the contact form */
+}
+/***** END OF CONTACT FORM STYLING *****/
+
+/* SLIDESHOW */
+
+#slideshow_background {
+    background:rgba(255,255,255, 0.35);
+}
+
+#slideshow_container {
+    width: 39.5vw;
+    height: auto;
+    padding-top: 4%;
+    position: relative;
+    margin: auto;
+}
+
+.my_slides {
+    display: none;
+}
+
+.slide_number {
+    color: white;
+    position: absolute;
+    top: 0;
+    font-family: Perpetua, Rockwell Extra Bold;
+    letter-spacing: .1vw; 
+    font-size: 1.5vw;
+    font-weight: bold;
+    display: none;
+}
+
+.slide_show_images {
+    vertical-align: middle;
+    height: auto;
+    /* box-shadow: 0px 5px 10px 12px rgba(0, 0, 0, .75); */
+    width: auto;
+}
+
+.text {
+    color: white;
+    padding: 1vw;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-family: Perpetua, Rockwell Extra Bold;
+    letter-spacing: .1vw; 
+    font-size: 1.5vw;
+    background-color: rgba(0,0,0,0.75);
+    font-weight: bold;
+    border-radius: 7px 7px 7px 7px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 1vw;
+    width: 1vw;
+    margin: .25vw;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.previous, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 2vw;
+    margin-top: -0vw;
+    color: darkgray;
+    font-weight: bold;
+    font-size: 1.5vw;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    transition: 0.6s ease;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.previous:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+}
+/* END OF SLIDESHOW STYLING */
