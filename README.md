@@ -6,7 +6,7 @@
 - [Tic-Tac-Toe Game]()
 - [Calculator](https://github.com/rdrigezariel/JavaScript-Projects/tree/main/Basic%20JavaScript%20Projects/Calculator%20Project)
 
-### Piza Menu
+### Pizza Menu
 This project is a muenu used to order pizza with various selection of toppings. It then takes the input information and calculates a price for the order.
 
 ### Tic-Tac-Toe Game
